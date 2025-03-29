@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Character Naming Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Marvel Character Naming Game</h1>
+    
+    <!-- Player setup section -->
+    <div id="player-setup">
+        <label for="num-players">Number of players:</label>
+        <select id="num-players">
+            <option value="2">2 Players</option>
+            <option value="3">3 Players</option>
+            <option value="4">4 Players</option>
+        </select>
+
+        <div id="player-names">
+            <!-- Player name inputs will be dynamically generated here -->
+        </div>
+        
+        <button id="start-game">Start Game</button>
+    </div>
+
+    <!-- Game container -->
+    <div id="game-container" style="display: none;">
+        <p id="current-turn">Player 1's turn to name a character</p>
+        <input type="text" id="character-input" placeholder="Enter Marvel character">
+        <button id="submit-button">Submit</button>
+        <p id="timer">Time left: <span id="time">20</span> seconds</p>
+        <p id="game-result"></p>
+        
+        <!-- List of named characters -->
+        <h2>Named Characters:</h2>
+        <ul id="named-characters"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

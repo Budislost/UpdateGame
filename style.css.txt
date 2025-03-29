@@ -1,0 +1,20 @@
+/* Player setup section */
+#player-setup {
+    margin-bottom: 20px;
+}
+
+#player-names input {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Named characters list */
+#named-characters {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#named-characters li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
